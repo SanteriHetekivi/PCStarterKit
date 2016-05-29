@@ -1,0 +1,13 @@
+GIT_PROMPT_ONLY_IN_REPO=1
+GIT_PROMPT_FETCH_REMOTE_STATUS=1
+GIT_PROMPT_SHOW_UPSTREAM=1
+GIT_PROMPT_SHOW_UNTRACKED_FILES=all
+GIT_PROMPT_START='[\A] [\u@\h]'
+GIT_PROMPT_END=' \w/ '
+
+source ~/.bash-git-prompt/gitprompt.sh
+
+PS1='[\A] [\u@\h] \w/ '
+
+source ~/.bash_aliases
+
