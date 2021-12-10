@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-$DIR/install.sh alsa-utils alsa-plugins bluez bluez-utils pulseaudio pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-gconf pulseaudio-jack pulseaudio-lirc pulseaudio-xen pulseaudio-zeroconf pulseaudio-alsa paprefs pavucontrol || { echo "ERROR: Installing Audio and Bluetooth packages failed!"; exit 1; } 
+$DIR/install.sh alsa-utils alsa-plugins bluez bluez-utils pulseaudio pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack pulseaudio-lirc pulseaudio-zeroconf pulseaudio-alsa paprefs pavucontrol || { echo "ERROR: Installing Audio and Bluetooth packages failed!"; exit 1; } 
 sudo modprobe btusb || { echo "ERROR: Starting bluetooth failed! "; exit 1; }
 sudo systemctl enable bluetooth.service || { echo "ERROR: Enabling bluetooth.service failed! "; exit 1; }
 echo "WLAN installed!"
