@@ -9,8 +9,8 @@ function isInstalled
     fi
 }
 
-if isInstalled yaourt ; then
-    MANAGER="yaourt"
+if isInstalled yay ; then
+    MANAGER="yay"
 else
     MANAGER="sudo pacman"
 fi
